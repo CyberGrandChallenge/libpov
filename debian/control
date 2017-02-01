@@ -1,0 +1,14 @@
+Source: libpov
+Section: devel
+Priority: standard
+Maintainer: Brian Caswell <bmc@lungetech.com>
+Build-Depends: debhelper (>= 8.0.0), binutils-cgc-i386, libcgc
+Standards-Version: 3.9.3
+Homepage: http://www.darpa.mil/cybergrandchallenge/
+
+Package: libpov
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcgc
+Description: CGC POV library
+ libpov provides the library that xml2c POVs and Polls use to communicate with
+ CGCOS execution enviornment.
